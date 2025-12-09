@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Onix Aviation Color Palette - Extracted from Logo */
+    /* Primary: Deep Navy Blue #1E1E4B */
+    --onix-navy: 240 43% 21%;
+    --onix-navy-light: 240 35% 28%;
+    --onix-navy-dark: 240 45% 15%;
+    
+    /* Secondary: Pure White for contrast */
+    --onix-white: 0 0% 100%;
+    --onix-off-white: 240 20% 98%;
+    
+    /* Accent: Sky Blue for aviation feel */
+    --onix-sky: 210 100% 60%;
+    --onix-sky-light: 210 100% 75%;
+    
+    /* Accent 2: Gold/Amber for luxury */
+    --onix-gold: 38 95% 55%;
+    --onix-gold-light: 38 100% 70%;
+    
+    /* Neutral tones */
+    --onix-slate: 240 20% 40%;
+    --onix-gray: 240 10% 60%;
+    
+    --background: var(--onix-navy-dark);
+    --foreground: var(--onix-off-white);
+    --card: var(--onix-navy);
+    --card-foreground: var(--onix-off-white);
+    --popover: var(--onix-navy);
+    --popover-foreground: var(--onix-off-white);
+    --primary: var(--onix-navy);
+    --primary-foreground: var(--onix-off-white);
+    --secondary: var(--onix-navy-light);
+    --secondary-foreground: var(--onix-off-white);
+    --muted: var(--onix-slate);
+    --muted-foreground: var(--onix-gray);
+    --accent: var(--onix-gold);
+    --accent-foreground: var(--onix-navy-dark);
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: var(--onix-off-white);
+    --border: 240 30% 25%;
+    --input: var(--onix-navy-light);
+    --ring: var(--onix-gold);
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  
+  .font-display {
+    font-family: 'Syne', sans-serif;
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    background: rgba(30, 30, 75, 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .glass-panel-light {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(var(--onix-gold)), hsl(var(--onix-gold-light)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-sky {
+    background: linear-gradient(135deg, hsl(var(--onix-sky)), hsl(var(--onix-sky-light)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-sky {
+    background: linear-gradient(135deg, hsl(var(--onix-navy-dark)), hsl(var(--onix-navy)), hsl(240 40% 25%));
+  }
+  
+  .bg-gradient-luxury {
+    background: linear-gradient(180deg, hsl(var(--onix-navy-dark)) 0%, hsl(var(--onix-navy)) 50%, hsl(240 35% 20%) 100%);
+  }
+  
+  .noise-overlay {
+    position: relative;
+  }
+  
+  .noise-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    opacity: 0.02;
+    pointer-events: none;
+  }
+  
+  .glow-gold {
+    box-shadow: 0 0 40px rgba(217, 164, 65, 0.3);
+  }
+  
+  .glow-gold-sm {
+    box-shadow: 0 0 20px rgba(217, 164, 65, 0.2);
+  }
+  
+  .glow-sky {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+  }
+  
+  .glow-sky-sm {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+  }
+  
+  /* Jet trail divider */
+  .jet-trail-divider {
+    position: relative;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, hsl(var(--onix-gold)), transparent);
+  }
+  
+  .jet-trail-divider::before {
+    content: '';
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: hsl(var(--onix-gold));
+    border-radius: 50%;
+    box-shadow: 0 0 10px hsl(var(--onix-gold));
+  }
+  
+  /* Runway lines */
+  .runway-pattern {
+    background-image: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 40px,
+      rgba(255, 255, 255, 0.1) 40px,
+      rgba(255, 255, 255, 0.1) 80px
+    );
+  }
+}
