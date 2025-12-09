@@ -1,328 +1,290 @@
-Onix Aviation – Creative Agency Website
-Product Requirements Document (PRD)
+# Onix Aviation – Creative Agency Website
+## Product Requirements Document (PRD)
+*A premium, aviation-inspired marketing website*
 
-A premium, aviation-inspired marketing website
+## Overview
 
-📌 Overview
+Onix Aviation is a high-end aviation marketing agency. This project delivers a **premium, single-page website** with smooth motion design, a strong brand identity, and subtle aviation cues.
 
-Onix Aviation is a high-end aviation marketing agency. This project delivers a premium, single-page website with smooth motion design, a strong brand identity, and subtle aviation cues. The goal is to clearly communicate expertise, services, and client success to aviation decision-makers looking for a creative partner who understands their industry.
+The goal is to clearly communicate expertise, services, and client success to aviation decision-makers seeking a creative partner who understands their industry.
 
-The site blends modern editorial design with glassmorphism, resulting in a sophisticated and future-forward user experience.
+The website aesthetic blends **modern editorial design** with **glassmorphism**, creating a sophisticated and future-forward experience.
 
-🎨 Design Archetype
-Modern Editorial × Glassmorphism Hybrid
+---
 
-A refined and premium design system built on:
+## Design Archetype
+### Modern Editorial × Glassmorphism Hybrid
 
-Elegant typography
+A refined, premium design system rooted in:
 
-Generous whitespace
+- Elegant typography  
+- Generous whitespace  
+- Translucent glass panels  
+- Atmospheric lighting and layered depth  
+- Subtle aviation-inspired geometric lines  
 
-Translucent glass panels
+The design avoids cliché airplane icons while delivering a strong aviation identity.
 
-Atmospheric lighting and depth
+---
 
-Subtle aviation-inspired geometric lines
+## Color Palette Strategy
 
-This styling avoids clichéd airplane icons while still expressing a strong aviation identity.
+All colors originate from the **Onix Aviation logo**.
 
-🌈 Color Palette Strategy
+### Primary Colors
 
-All colors are derived from the Onix Aviation logo.
+- **Deep Navy / Midnight Blue**  
+  - Used for hero backgrounds, high-impact sections, and primary CTAs.
 
-Primary Colors
+- **Vibrant Accent (Orange / Coral / Teal)**  
+  - Used sparingly for highlights, buttons, and animations.
 
-Deep Navy / Midnight Blue
-Used for hero backgrounds, high-impact sections, and primary CTAs.
+### Secondary Colors
 
-Vibrant Accent (Orange / Coral / Teal)
-Used sparingly for highlights, buttons, and animations.
+- **Atmospheric Sky Gradients**  
+  - Navy → Twilight Purple → Horizon Orange  
+  - Used in hero and section backgrounds.
 
-Secondary Colors
+- **Neutral Foundation**  
+  - Warm off-white: `#F8F6F3`  
+  - Tinted charcoal: `#1A1D29`
 
-Atmospheric Sky Gradients
+### Glassmorphism Layers
 
-Navy → Twilight Purple → Horizon Orange
-Used in hero and section backgrounds.
+- Panels with **10–20% opacity**
+- Subtle inner/outer glows
+- Soft shadows
+- Blur (around 20px) to create depth
 
-Neutral Foundation
+---
 
-Warm off-white #F8F6F3
+## Key Components
 
-Tinted charcoal #1A1D29
+### 1. Navigation & Header
 
-Glassmorphism Layers
+- Floating translucent navbar  
+- Blur + transparency  
+- Logo on the left, links on the right  
+- Sticky behavior with slight compression on scroll  
+- Animated underline on link hover  
 
-10–20% opacity panels
+### 2. Hero Section
 
-Subtle inner/outer glows
+- Full viewport height  
+- Atmospheric gradient background  
+- Animated flight-path lines or geometric patterns  
+- Bold display typography (100–120px)  
+- Staggered fade-in animations  
+- Dual contrasting CTAs  
 
-Soft shadows + blur (20px)
+### 3. Services
 
-🧩 Key Components
-1. Navigation & Header
+- Glassmorphic cards  
+- Minimal aviation line-art icons  
+- Hover state: lift, glow, and reveal more content  
+- Expandable **accordion** for detailed service descriptions  
 
-Floating translucent navbar
+### 4. Client Showcase
 
-Blur + transparency
+- Masonry or bento-style grid  
+- Translucent branded cards for logos  
+- Hover previews with mini case-study teasers  
+- Smooth stagger animation on scroll  
 
-Logo left, links right
+### 5. Blog Listing
 
-Sticky behavior with compression on scroll
+- Editorial layout  
+- Featured image cards  
+- Category tags  
+- Reading time + metadata  
+- Smooth zoom hover effect  
 
-Animated underline on link hover
+### 6. Contact Form
 
-2. Hero Section
+- Floating labels  
+- Accent-color glow on input focus  
+- Brand-styled map marker  
+- Animated success state  
 
-Full viewport height
+### 7. Footer
 
-Atmospheric gradient background
+- Multi-column layout  
+- Runway-inspired geometric background  
+- Newsletter signup  
+- Social links  
 
-Animated flight-path lines or geometric patterns
+---
 
-Bold display typography (100–120px)
+## Core Interactions & User Flows
 
-Staggered fade-in animations
+### Entrance Animation
 
-Dual contrasting CTAs
+- Gradient fades in  
+- Flight-path lines animate  
+- Typography staggers in  
+- CTAs fade up  
+- Navigation slides down  
 
-3. Services
+### Navigation Flow
 
-Glass-morphic cards
+- Smooth scrolling to anchored sections  
+- Active section highlighted in the navbar  
+- On mobile: full-screen overlay menu  
 
-Minimal aviation line-art icons
+### Service Interaction
 
-Hover: lift, glow, reveal more content
+- Hover: card lift + glow + partial reveal  
+- Click: expand a modal with:
+  - Detailed service description  
+  - Case studies  
+  - Animated transitions  
 
-Expandable accordion for detailed service descriptions
+### Client Case Studies
 
-4. Client Showcase
+- Clicking a logo opens a case study page or overlay  
+- Case studies include:
+  - Challenge  
+  - Solution  
+  - Results  
 
-Masonry or bento-style grid
+### Blog Flow
 
-Translucent branded cards for logos
+- Hover lift on blog cards  
+- Clean, readable article layout  
+- Related articles section at the bottom  
 
-Hover previews (mini case study teasers)
+### Contact Submission
 
-Smooth stagger animation on scroll
+- Inline validation  
+- Animated loading spinner on submit  
+- Animated success confirmation message  
 
-5. Blog Listing
+---
 
-Editorial layout
+## Visual Direction
 
-Featured image cards
+### Atmosphere
 
-Category tags
+The visual atmosphere is inspired by a twilight view from a private jet window:
 
-Reading time + metadata
+- Premium  
+- Calm  
+- Deep colors  
+- Subtle, controlled motion  
 
-Smooth zoom hover effect
+### Layout Principles
 
-6. Contact Form
+- Vertical padding per section: **120–160px**  
+- Element spacing: **40–60px**  
+- Asymmetric compositions  
+- Alternating (left/right) content layout  
+- Bento-grid influence in client and blog sections  
+- Layered Z-axis depth (foreground, midground, background elements)
 
-Floating labels
+### Typography
 
-Accent-color glows on input focus
+**Heading Fonts (Option A / Option B):**
+- Syne (800)  
+- Space Grotesk (700)  
 
-Brand-styled map marker
+**Body Fonts (Option A / Option B):**
+- Manrope  
+- Plus Jakarta Sans  
 
-Animated success state
+**Technical / Metadata:**
+- JetBrains Mono  
 
-7. Footer
+**Font Sizes:**
+- Hero heading: **100–120px**  
+- Section titles: **56–72px**  
+- Subheads: **32–40px**  
+- Body text: **16–18px**  
 
-Multi-column structure
+### Motion Design
 
-Runway-inspired geometric background
+- Easing curves: `cubic-bezier(0.4, 0.0, 0.2, 1)`  
+- Fast interactions: **200–300ms**  
+- Entrance animations: **600–800ms**  
+- Stagger timing: **80–120ms**
 
-Newsletter signup
+**Signature animations:**
 
-Social links
+- Flight-path line drawing  
+- Card lift with glow  
+- Smooth upward reveal of text  
 
-🧭 Core Interactions & User Flows
-Entrance Animation
+### Aviation Theming (Subtle)
 
-Gradient fades in
+- Thin runway-line patterns  
+- Navigation chart-inspired geometry  
+- Minimal cockpit instrument icons  
+- Color-graded aviation photography  
 
-Flight-path lines animate
+> Avoid literal airplane silhouettes or clichéd clipart.
 
-Typography staggers
+---
 
-CTAs fade up
+## Page-Specific Notes
 
-Navigation slides down
+> Even though the main experience is single-page style, these notes define logical “sections” that could also map to separate pages if needed.
 
-Navigation Flow
+### Home
 
-Smooth scrolling to anchored sections
+- 90vh hero section  
+- 3-column service grid  
+- Featured client logos  
+- CTA section with a contrasting background  
 
-Active section highlighted
+### About
 
-Mobile: full-screen overlay menu
+- Split layout with alternating left/right content  
+- Mission and vision cards  
+- Team section with hover reveals (role, experience, social links)  
+- Animated milestones timeline  
 
-Service Interaction
+### Services
 
-Hover → lift + glow
+- Overview hero for services  
+- Expandable detailed service blocks  
+- Visual process (step-by-step flow or diagram)  
+- Related case studies shown near relevant services  
 
-Click → expand modal
+### Our Clients
 
-Modal includes service details + case studies
+- Filterable client logo grid (e.g., by segment: airlines, MRO, charter, OEMs)  
+- Clicking a logo opens a case study  
+- Testimonials between rows of logos  
+- Animated counters (e.g., years of experience, projects delivered, countries served)  
 
-Client Case Studies
+### Blogs
 
-Click logo → case study page or overlay
+- Featured article hero (top story)  
+- Filterable grid layout (categories, tags)  
+- Sidebar for:
+  - Popular posts  
+  - Categories  
+  - Possibly a newsletter signup  
+- SEO-optimized article layout:
+  - H1, H2, H3 structure  
+  - Featured image  
+  - Metadata (author, date, reading time)  
 
-Includes challenge, solution, results
+### Contact Us
 
-Animated transitions
+- Split layout: contact form + map  
+- Floating labels on fields  
+- Custom map styling matching brand colors  
+- Quick contact actions (click-to-call, click-to-email)  
 
-Blog Flow
+---
 
-Hover lift on cards
+## Technical Considerations
 
-Clean article reading layout
+*(Informational for design context, not full implementation details.)*
 
-Related articles at bottom
-
-Contact Submission
-
-Inline validation
-
-Animated loading spinner
-
-Animated success confirmation
-
-✨ Visual Direction
-Atmosphere
-
-Looks and feels like a twilight view from a private jet window:
-premium, calm, deep colors, subtle motion.
-
-Layout Principles
-
-Vertical padding: 120–160px
-
-Element spacing: 40–60px
-
-Asymmetric compositions
-
-Section alternation (left/right content)
-
-Bento-grid influence in client & blog sections
-
-Layered Z-axis depth
-
-Typography
-
-Headings: Syne (800) or Space Grotesk (700)
-Body: Manrope or Plus Jakarta Sans
-Technical details: JetBrains Mono
-
-Hero: 100–120px
-Section titles: 56–72px
-Subheads: 32–40px
-Body: 16–18px
-
-Motion Design
-
-Easing curves: cubic-bezier(0.4, 0.0, 0.2, 1)
-
-Fast interactions: 200–300ms
-
-Entrance: 600–800ms
-
-Stagger: 80–120ms
-
-Signature animations:
-
-Flight-path drawing lines
-
-Card lift with glow
-
-Smooth upward reveal of text
-
-Aviation Theming (Subtle)
-
-Thin runway-line patterns
-
-Navigation chart geometry
-
-Minimal cockpit instrument icons
-
-Color-graded aviation images
-
-Avoid literal airplane silhouettes or clichés.
-
-📄 Page-Specific Notes
-Home
-
-90vh hero
-
-3-column service grid
-
-Featured client logos
-
-CTA section with contrasting background
-
-About
-
-Split layout (alternating left/right)
-
-Mission/vision cards
-
-Team section with hover reveals
-
-Animated milestones timeline
-
-Services
-
-Overview hero
-
-Expandable detailed service blocks
-
-Process visualization
-
-Related case studies
-
-Our Clients
-
-Filterable grid
-
-Clickable logos → case studies
-
-Testimonials between rows
-
-Animated counters
-
-Blogs
-
-Feature article hero
-
-Filterable grid layout
-
-Sidebar for popular posts
-
-SEO-optimized article layout
-
-Contact Us
-
-Form + map split
-
-Floating labels
-
-Custom map styling
-
-Click-to-call or email
-
-⚙️ Technical Considerations
-
-(For design context; not implementation details)
-
-Fully responsive (mobile-first)
-
-All animation respects prefers-reduced-motion
-
-Optimized images + lazy loading
-
-Semantic HTML for SEO
-
-Accessible form validation
+- Fully responsive, **mobile-first** approach  
+- All animations must respect `prefers-reduced-motion`  
+- Optimized images with lazy loading  
+- Semantic HTML for SEO and accessibility  
+- Accessible form validation (error states, ARIA where needed)  
+- Smooth, GPU-friendly animations where possible  
